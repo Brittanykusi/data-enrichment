@@ -40,7 +40,7 @@ census_simple = census1[[ 'FIPS', 'ADI_NATRANK']]
 # merge datasets 
 combined_df = discharges_simple.merge(census_simple, how='left', left_on='Facility Id', right_on='FIPS')
 
-# display dataset + save dataset as csv
+# display dataset
 combined_df
 
 
